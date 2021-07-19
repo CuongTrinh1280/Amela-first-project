@@ -42,20 +42,25 @@
                 <td>
                     <input type="text" name="area" id="area" size="15"/>
                 </td>
-            </tr><tr>
+            </tr>
+            <tr>
                 <th>Population:</th>
                 <td>
                     <input type="text" name="population" id="population" size="15"/>
                 </td>
-            </tr><tr>
+            </tr>
+            <tr>
                 <th>GDP:</th>
                 <td>
                     <input type="text" name="GDP" id="GDP" size="15"/>
                 </td>
-            </tr><tr>
+            </tr>
+            <tr>
                 <th>Description:</th>
                 <td>
-                    <input type="text" name="des" id="des" size="15"/>
+                    <textarea name="des" id="description" style="width:100%;height:100px">
+                        <c:out value='${city.des}'></c:out>
+                    </textarea>
                 </td>
             </tr>
             <tr>
