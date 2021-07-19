@@ -14,4 +14,13 @@
         <filter-name>EncodingFilter</filter-name>
         <url-pattern>/*</url-pattern>
     </filter-mapping>
+    <display-name>City Portfolio</display-name>
+    <servlet>
+        <servlet-name>ReadCityServlet</servlet-name>
+        <servlet-class>com.assignment.Controller.ReadCityServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ReadCityServlet</servlet-name>
+        <url-pattern>/ReadCity</url-pattern>
+    </servlet-mapping>
 </web-app>

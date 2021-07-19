@@ -11,6 +11,9 @@ import javax.validation.Validation;
 import javax.validation.Validator;
 import javax.validation.ValidatorFactory;
 import java.io.IOException;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.List;
 import java.util.Set;
@@ -99,6 +102,19 @@ public class ReadCityServlet extends HttpServlet {
         } catch (IOException e) {
             e.printStackTrace();
         }
+
+//        String cityName = request.getParameter("cityName");
+//        if (cityName != null && cityName.length() > 0) {
+//            ResultSet rs = statement.executeQuery("SELECT * FROM students WHERE Name = '" + cityName + "'");
+//        } else {
+//            ResultSet rs = statement.executeQuery("SELECT * FROM students");
+//        }
+//        if (cityName != null && cityName.length() > 0) {
+//            PreparedStatement ps = connection.prepareStatement(
+//                    "SELECT * FROM students WHERE Name = ?"); // ? = placeholder
+//            ps.setString(1, cityName); // Bind the value to the placeholder
+//            ResultSet rs = ps.executeQuery(); // Execute the prepared statement and fetch results
+//        }
     }
 
     private void listCities(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

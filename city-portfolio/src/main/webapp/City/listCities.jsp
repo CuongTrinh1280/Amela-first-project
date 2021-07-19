@@ -32,7 +32,7 @@
                 <form action="/ReadCity?action=search$cityName='${city.cityName}'" method="post">
                     <div class="form-group has-search">
                         <span class="fa fa-search form-control-feedback"></span>
-                        <input type="text" class="form-control" placeholder="Search by city name">
+                        <input type="text" class="form-control" placeholder="Search by city name" name="cityName">
                     </div>
 
                     <p class="mt-4 text-center">

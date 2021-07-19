@@ -25,6 +25,9 @@
             <caption>
                 <h2>Add New City</h2>
             </caption>
+            <c:if test="${city != null}">
+                <input type="hidden" name="id" value="<c:out value='${city.cityId}' />"/>
+            </c:if>
             <tr>
                 <th>City Name:</th>
                 <td>
