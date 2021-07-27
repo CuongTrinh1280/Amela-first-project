@@ -17,8 +17,8 @@ import org.springframework.jdbc.datasource.SimpleDriverDataSource;
 public class CityDAO implements ICityDAO {
 
     private String jdbcURL = "jdbc:mysql://localhost:3307/city_portfolio?useUnicode=yes&characterEncoding=UTF-8";
-    private String jdbcUsername = "root";
-    private String jdbcPassword = "cuongthan1280";
+    private String jdbcUsername = "root"; //input your username here
+    private String jdbcPassword = "*******"; //input your password here
 
     private static final String INSERT_CITIES_SQL = "INSERT INTO city_portfolio.countries"
             + " (city, country, area, population, GDP, des) VALUES "
